@@ -196,7 +196,7 @@ exports.get = function(props = {}) {
           submenu: [
             {
               label: i18n.t('menu.edit', '&Stone Tool'),
-              accelerator: 'CmdOrCtrl+1',
+              accelerator: '1',
               click: () =>
                 selectTool(
                   sabaki.state.mode !== 'edit' ||
@@ -207,42 +207,42 @@ exports.get = function(props = {}) {
             },
             {
               label: i18n.t('menu.edit', '&Cross Tool'),
-              accelerator: 'CmdOrCtrl+2',
+              accelerator: '2',
               click: () => selectTool('cross')
             },
             {
               label: i18n.t('menu.edit', '&Triangle Tool'),
-              accelerator: 'CmdOrCtrl+3',
+              accelerator: '3',
               click: () => selectTool('triangle')
             },
             {
               label: i18n.t('menu.edit', 'S&quare Tool'),
-              accelerator: 'CmdOrCtrl+4',
+              accelerator: '4',
               click: () => selectTool('square')
             },
             {
               label: i18n.t('menu.edit', 'C&ircle Tool'),
-              accelerator: 'CmdOrCtrl+5',
+              accelerator: '5',
               click: () => selectTool('circle')
             },
             {
               label: i18n.t('menu.edit', '&Line Tool'),
-              accelerator: 'CmdOrCtrl+6',
+              accelerator: '6',
               click: () => selectTool('line')
             },
             {
               label: i18n.t('menu.edit', '&Arrow Tool'),
-              accelerator: 'CmdOrCtrl+7',
+              accelerator: '7',
               click: () => selectTool('arrow')
             },
             {
               label: i18n.t('menu.edit', 'La&bel Tool'),
-              accelerator: 'CmdOrCtrl+8',
+              accelerator: '8',
               click: () => selectTool('label')
             },
             {
               label: i18n.t('menu.edit', '&Number Tool'),
-              accelerator: 'CmdOrCtrl+9',
+              accelerator: '9',
               click: () => selectTool('number')
             }
           ]
@@ -741,12 +741,12 @@ exports.get = function(props = {}) {
           submenu: [
             {
               label: i18n.t('menu.tools', 'Rotate &Anticlockwise'),
-              accelerator: 'CmdOrCtrl+Alt+Left',
+              accelerator: 'Q',
               click: () => sabaki.pushBoardTransformation('rrr')
             },
             {
               label: i18n.t('menu.tools', 'Rotate &Clockwise'),
-              accelerator: 'CmdOrCtrl+Alt+Right',
+              accelerator: 'R',
               click: () => sabaki.pushBoardTransformation('r')
             },
             {
