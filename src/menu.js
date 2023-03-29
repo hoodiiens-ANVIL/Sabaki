@@ -741,12 +741,12 @@ exports.get = function(props = {}) {
           submenu: [
             {
               label: i18n.t('menu.tools', 'Rotate &Anticlockwise'),
-              accelerator: 'Q',
+              accelerator: 'q',
               click: () => sabaki.pushBoardTransformation('rrr')
             },
             {
               label: i18n.t('menu.tools', 'Rotate &Clockwise'),
-              accelerator: 'R',
+              accelerator: 'r',
               click: () => sabaki.pushBoardTransformation('r')
             },
             {
