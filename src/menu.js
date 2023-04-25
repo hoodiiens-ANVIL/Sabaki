@@ -746,17 +746,27 @@ exports.get = function(props = {}) {
             },
             {
               label: i18n.t('menu.tools', 'Rotate &Clockwise'),
-              accelerator: 'r',
+              accelerator: 'e',
               click: () => sabaki.pushBoardTransformation('r')
             },
             {
               label: i18n.t('menu.tools', '&Flip Horizontally'),
-              accelerator: 'CmdOrCtrl+Alt+Down',
+              accelerator: 'w',
+              click: () => sabaki.pushBoardTransformation('f')
+            },
+            {
+              label: i18n.t('menu.tools', '&Flip Horizontally'),
+              accelerator: 's',
               click: () => sabaki.pushBoardTransformation('f')
             },
             {
               label: i18n.t('menu.tools', 'Flip &Vertically'),
-              accelerator: 'CmdOrCtrl+Alt+Shift+Down',
+              accelerator: 'a',
+              click: () => sabaki.pushBoardTransformation('rrf')
+            },
+            {
+              label: i18n.t('menu.tools', 'Flip &Vertically'),
+              accelerator: 'd',
               click: () => sabaki.pushBoardTransformation('rrf')
             },
             {
